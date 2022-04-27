@@ -2,7 +2,7 @@
 
 KIND is an Italian dataset for Named-Entity Recognition.
 
-It contains more than one million tokens with the annotation covering three classes: persons, locations, and organizations.
+It contains more than one million tokens with the annotation covering three classes: person, location, and organization.
 Most of the dataset (around 600K tokens) contains manual gold annotations in three different domains: news, literature, and political discourses.
 
 For the construction of the dataset, we decide to use texts available for free, under a license that permits both research and commercial use.
