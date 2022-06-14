@@ -43,7 +43,7 @@ The complete corpus contains a comprehensive collection of Alcide De Gasperi’s
 
 This page refers to the dataset presented in the paper:
 
-KIND: an Italian Multi-Domain Dataset for Named Entity Recognition. Teresa Paccosi and Alessio Palmero Aprosio, Proceedings of the 13th Conference on Language Resources and Evaluation 2022 (LREC 2022)
+KIND: an Italian Multi-Domain Dataset for Named Entity Recognition. Teresa Paccosi and Alessio Palmero Aprosio, Proceedings of the 13th Conference on Language Resources and Evaluation 2022 (LREC 2022) [[arXiv](https://arxiv.org/abs/2112.15099)]
 
 
 ## License
