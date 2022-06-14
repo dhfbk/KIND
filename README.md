@@ -39,6 +39,13 @@ Finally, we annotate 158 document (150,632 tokens) from [Alcide Digitale](https:
 
 The complete corpus contains a comprehensive collection of Alcide De Gasperi’s public documents, 2,762 in total, written or transcribed between 1901 and 1954.
 
+## Publications
+
+This page refers to the dataset presented in the paper:
+
+KIND: an Italian Multi-Domain Dataset for Named Entity Recognition. Teresa Paccosi and Alessio Palmero Aprosio, Proceedings of the 13th Conference on Language Resources and Evaluation 2022 (LREC 2022)
+
+
 ## License
 
 The NER annotations in (i), (ii), and (iii) are released under the [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license](https://creativecommons.org/licenses/by-nc/4.0/).
