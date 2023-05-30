@@ -8,16 +8,24 @@ parser.add_argument('output_folder')
 parser.add_argument('dg_user')
 parser.add_argument('wn_user')
 parser.add_argument('fic_user')
+parser.add_argument('--add_labels', action="store_true", help="Add labels")
 args = parser.parse_args()
 
 skipFiles = ["35994.tsv", "38378.tsv"]
+blankNer = "O"
 
 import os
 import re
 
-fw_fic = open(os.path.join(args.output_folder, "FIC_test_nolabel.tsv"), "w")
-fw_wn = open(os.path.join(args.output_folder, "WN_test_nolabel.tsv"), "w")
-fw_adg = open(os.path.join(args.output_folder, "ADG_test_nolabel.tsv"), "w")
+nerRe = re.compile(r'\[[0-9]+\]')
+
+prefix = ""
+if not args.add_labels:
+	prefix = "_nolabel"
+
+fw_fic = open(os.path.join(args.output_folder, "FIC_test" + prefix + ".tsv"), "w")
+fw_wn = open(os.path.join(args.output_folder, "WN_test" + prefix + ".tsv"), "w")
+fw_adg = open(os.path.join(args.output_folder, "ADG_test" + prefix + ".tsv"), "w")
 
 stats = {}
 for label in ["WN", "FIC", "ADG"]:
@@ -53,6 +61,7 @@ for f in files:
 	with open(fileName) as fo:
 		stats[label]["documents"] += 1
 		hasToken = False
+		previousNer = blankNer
 		for line in fo:
 			if line.startswith("#"):
 				continue
@@ -66,11 +75,25 @@ for f in files:
 				hasToken = True
 				parts = line.split("\t")
 				token = parts[2]
+				ner = parts[3]
+				ner = nerRe.sub("", ner)
+				if ner == "_":
+					ner = blankNer
 				if token == "\\":
 					token = ";"
 				if label == "FIC" and re.match(r"[^-]+-[^-]+", token):
 					token = token.replace("-", "")
 				buffer.write(token)
+				if args.add_labels:
+					thisNer = ner
+					if ner != blankNer:
+						if ner == previousNer:
+							thisNer = "I-" + ner
+						else:
+							thisNer = "B-" + ner
+					buffer.write("\t")
+					buffer.write(thisNer)
+					previousNer = ner
 				buffer.write("\n")
 				stats[label]["tokens"] += 1
 

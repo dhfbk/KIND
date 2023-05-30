@@ -1,0 +1,43 @@
+camoscio_lora/DAC_ADG_extremITA_2.tsv 
+              precision    recall  f1-score   support
+
+           O       0.99      1.00      0.99     13246
+         PER       0.94      0.87      0.91       226
+         LOC       0.77      0.87      0.82       107
+         ORG       0.82      0.56      0.66       326
+
+    accuracy                           0.98     13905
+   macro avg       0.88      0.82      0.84     13905
+
+camoscio_lora/DAC_WN_extremITA_2.tsv 
+              precision    recall  f1-score   support
+
+           O       0.99      0.99      0.99     50895
+         PER       0.96      0.96      0.96      2322
+         LOC       0.91      0.84      0.87      1310
+         ORG       0.86      0.83      0.84      1992
+
+    accuracy                           0.98     56519
+   macro avg       0.93      0.90      0.92     56519
+
+camoscio_lora/DAC_FIC_extremITA_2.tsv 
+              precision    recall  f1-score   support
+
+           O       1.00      1.00      1.00     26709
+         PER       0.97      0.82      0.89       443
+         LOC       0.81      0.81      0.81        37
+         ORG       0.00      0.00      0.00         1
+
+    accuracy                           1.00     27190
+   macro avg       0.69      0.66      0.68     27190
+
+camoscio_lora/all.tsv 
+              precision    recall  f1-score   support
+
+           O       0.99      1.00      0.99     90850
+         PER       0.96      0.93      0.95      2991
+         LOC       0.89      0.84      0.86      1454
+         ORG       0.86      0.79      0.82      2319
+
+    accuracy                           0.99     97614
+   macro avg       0.93      0.89      0.91     97614
