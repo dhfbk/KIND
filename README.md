@@ -45,6 +45,37 @@ This page refers to the dataset presented in the paper:
 
 KIND: an Italian Multi-Domain Dataset for Named Entity Recognition. Teresa Paccosi and Alessio Palmero Aprosio, Proceedings of the 13th Conference on Language Resources and Evaluation 2022 (LREC 2022) [[arXiv](https://arxiv.org/abs/2112.15099)]
 
+BibTeX:
+
+```
+@inproceedings{lrec2022kind,
+    title = "{KIND}: an {I}talian Multi-Domain Dataset for Named Entity Recognition",
+    author = "Paccosi, Teresa and Palmero Aprosio, Alessio",
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    pages = "501--507"
+}
+```
+
+Some [additional data](evalita-2023) has been annotated and made available for the [EVALITA 2023](https://www.evalita.it/campaigns/evalita-2023/) task. In case you use this dataset, you may cite:
+
+NERMuD at EVALITA 2023: Overview of the Named-Entities Recognition on Multi-Domain Documents Task. Alessio Palmero Aprosio and Teresa Paccosi, Proceedings of the Eighth Evaluation Campaign of Natural Language Processing and Speech Tools for Italian. Final Workshop (EVALITA 2023)
+
+BibTeX:
+
+```
+@inproceedings{evalita2023nermud,
+    title={{NERMuD} at {EVALITA} 2023: Overview of the Named-Entities Recognition on Multi-Domain Documents Task},
+    author={Palmero Aprosio, Alessio and Paccosi, Teresa},
+    booktitle={Proceedings of the Eighth Evaluation Campaign of Natural Language Processing and Speech Tools for Italian. Final Workshop (EVALITA 2023)},
+    publisher = {CEUR.org},
+    year = {2023},
+    month = {September},
+    address = {Parma, Italy}
+}
+```
 
 ## License
 
