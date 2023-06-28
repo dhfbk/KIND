@@ -1,43 +1,43 @@
 it5/DAC_ADG_extremITA_1.tsv
               precision    recall  f1-score   support
 
-           O       0.99      0.99      0.99     13246
          PER       0.89      0.87      0.88       226
          LOC       0.78      0.85      0.81       107
          ORG       0.75      0.58      0.65       326
 
-    accuracy                           0.98     13905
-   macro avg       0.85      0.82      0.83     13905
+   micro avg       0.81      0.72      0.76       659
+   macro avg       0.80      0.77      0.78       659
+weighted avg       0.80      0.72      0.76       659
 
 it5/DAC_WN_extremITA_1.tsv
               precision    recall  f1-score   support
 
-           O       0.98      0.99      0.99     50895
          PER       0.96      0.83      0.89      2322
          LOC       0.89      0.79      0.84      1310
          ORG       0.80      0.77      0.79      1992
 
-    accuracy                           0.97     56519
-   macro avg       0.91      0.85      0.87     56519
+   micro avg       0.88      0.80      0.84      5624
+   macro avg       0.88      0.80      0.84      5624
+weighted avg       0.89      0.80      0.84      5624
 
 it5/DAC_FIC_extremITA_1.tsv
               precision    recall  f1-score   support
 
-           O       1.00      1.00      1.00     26709
          PER       0.96      0.87      0.91       443
          LOC       0.62      0.76      0.68        37
          ORG       0.00      0.00      0.00         1
 
-    accuracy                           1.00     27190
-   macro avg       0.64      0.66      0.65     27190
+   micro avg       0.92      0.86      0.89       481
+   macro avg       0.53      0.54      0.53       481
+weighted avg       0.93      0.86      0.89       481
 
 it5/all.tsv 
               precision    recall  f1-score   support
 
-           O       0.99      1.00      0.99     90850
          PER       0.95      0.84      0.89      2991
          LOC       0.87      0.80      0.83      1454
          ORG       0.80      0.74      0.77      2319
 
-    accuracy                           0.98     97614
-   macro avg       0.90      0.84      0.87     97614
+   micro avg       0.88      0.79      0.84      6764
+   macro avg       0.87      0.79      0.83      6764
+weighted avg       0.88      0.79      0.84      6764

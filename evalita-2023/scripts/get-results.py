@@ -56,7 +56,9 @@ sortedLabels = ["O", "PER", "LOC", "ORG"]
 gold_nums = [conversionMap[v] for v in gold_labels]
 pred_nums = [conversionMap[v] for v in pred_labels]
 
-print(classification_report(gold_nums, pred_nums, target_names=sortedLabels, zero_division=0))
+okLabels = [1, 2, 3]
+okLabelsDesc = ["PER", "LOC", "ORG"]
+print(classification_report(gold_nums, pred_nums, labels=okLabels, target_names=okLabelsDesc, zero_division=0))
 exit()
 
 # print(sortedLabels)
